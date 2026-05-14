@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.cmd("belowright split | resize 15 | terminal")
+vim.cmd("belowright split | resize 7 | terminal")
 
 vim.keymap.set('n', '<C-s>', ':w<CR>', {})
 vim.keymap.set('n', '<C-t>', ':below terminal<CR>', {})
