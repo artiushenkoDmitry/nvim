@@ -47,7 +47,11 @@ return {
 
     telescope.load_extension('fzf')
 
-    vim.keymap.set('n', 'FF', builtin.find_files, {})
+    vim.keymap.set('n', 'FF',function()
+      builtin.find_files({
+        previewer = false,
+      })
+    end, {})
     vim.keymap.set('n', 'FG', builtin.live_grep, {})
   end,
 }
